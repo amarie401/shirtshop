@@ -1,0 +1,305 @@
+body {
+  background: #fff;
+  line-height: normal;
+}
+
+ul {
+  list-style: none;
+  float: right;
+  padding-left: 10px;
+}
+
+nav li {
+  float: left;
+  padding: 10px;
+  border: 1px solid #deb17e;
+  border-radius: 5%;
+  background: white;
+  margin: 10px;
+}
+
+nav li a {
+  color: #81bce5;
+}
+
+nav li:hover {
+  background: #f3db97;
+  cursor: pointer;
+}
+
+header {
+  background: #d583ac; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #deb17e, #d583ac); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, white, #d583ac); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #deb17e, #d583ac); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white, #d583ac); /* Standard syntax */
+  overflow: hidden;
+}
+
+/* Starts Main Shirts Container */
+.main-shirt-container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Start Single Shirt Container */
+.shirt-container {
+  position: relative;
+  width: 250px;
+  margin: 0 15px;
+}
+
+/* Media Query For Collapse */
+@media screen and (max-width: 895px;) {
+  .shirt-container {
+    min-width: 33.33%;
+  }
+}
+
+/* Image Container */
+.shirt-image-container {
+  border-top: 3px solid #6aacda;
+  border-left: 3px solid #6aacda;
+  border-right: 3px solid #6aacda;
+  padding: 5px;
+}
+
+.button-container {
+  position: absolute;
+  right: 0; /* makes border overlap */
+  top: 0; /* makes border overlap */
+}
+
+button {
+  background: #fff;
+  border: 3px solid #6aacda;
+  border-radius: 0;
+  color: #6aacda;
+  padding: 5px;
+}
+
+button:hover {
+  background: #6aacda;
+  color: white;
+}
+
+/* Shirt Image */
+img.shirt-img {
+  padding: 10px;
+  width: 220px;
+}
+/* End Shirt Image Container */
+
+/* Icon Container */
+.icon-container {
+  border: 3px solid #6aacda;
+  overflow: hidden;
+  text-align: center;
+}
+
+.icons {
+  float: left;
+  padding: 10px 0;
+  width: 48px;
+  border-right: 3px solid #6aacda;
+  color: #6aacda;
+}
+
+/* change color of square */
+.shirt-container:nth-child(2) .icons:nth-child(4) {
+  color: #d583ac;
+}
+
+.shirt-container:nth-child(3) .icons:nth-child(4) {
+  color: #deb17e;
+}
+
+/* make icon heart pink */
+.icons:nth-child(2){
+  color: #d583ac;
+}
+
+.icons:hover {
+  background: #6aacda;
+  color: white;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.last-icon {
+  border-right: 0;
+}
+
+/* Shirt size hover effects */
+.icons:nth-child(3):hover .icon-size {
+  background: #ccc;
+  opacity: 1;
+  transform: translate(0,0);
+}
+
+.icon-size {
+  background: #fff;
+  border: 2px solid #6aacda;
+  color: #333;
+  height: 165px;
+  left: 96px;
+  opacity: 0;
+  padding: 5px 2px;
+  position: absolute;
+  /*top: 0;*/
+  transform: translate(0, -500px);
+  transition: opacity 1s ease, transform 1s ease;
+  width: 50px;
+  bottom: 90px;
+  transition: background 3s ease;
+}
+/* Icon Size Arrow */
+.icon-size:after {
+  border: 8px solid transparent;
+  border-top-color: #6aacda;
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 15px;
+  bottom: -17px;
+  width: 0;
+}
+
+/* Shirt color hidden effects */
+.icons:nth-child(4):hover .icon-color {
+  opacity: 1;
+  transform: translate(0,0);
+  background: #ccc;
+}
+
+.mini-shirt {
+  padding: 2px 0;
+}
+
+.extralarge img {
+  width: 40px;
+  height: auto;
+}
+
+.large img {
+  width: 35px;
+  height: auto;
+}
+
+.medium img {
+  width: 30px;
+  height: auto;
+}
+
+.small img {
+  width: 25px;
+  height: auto;
+}
+
+.size-logo-container, .size-logo-container-small {
+  position: relative;
+}
+
+.size-logo {
+  color: black;
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.size-logo-container-small .size-logo {
+  top: 12px;
+  right: 17px;
+}
+
+.icon-color {
+  background: #fff;
+  border: 2px solid #6aacda;
+  color: white;
+  height: 100px;
+  left: 120px;
+  opacity: 0;
+  padding: 10px 18px 10px 10px;
+  position: absolute;
+  /*top: 0;*/
+  transform: translate(0, -500px);
+  transition: opacity 1s ease, transform 1s ease;
+  width: 100px;
+  bottom: 90px;
+  transition: background 3s ease;
+}
+/* Icons Arrow */
+.icon-color:after {
+  border: 8px solid transparent;
+  border-top-color: #6aacda;
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 42px;
+  bottom: -17px;
+  width: 0;
+}
+
+td .little-square {
+  width: 36px;
+  height: 36px;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.blue {
+  background: #81bce5;
+}
+.pink {
+  background: #d583ac;
+}
+
+.orange {
+  background: #deb17e;
+}
+
+.green {
+  background: #8bb992;
+}
+/* End Icon Container */
+
+/* Shirt Info */
+.shirt-info {
+  /*border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;*/
+  padding: 5px;
+  overflow: hidden;
+}
+
+.shirt-logo-name {
+  float: left;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 5px 3px 3px 3px;
+  color: #6aacda;
+}
+
+.shirt-cost {
+  float: right;
+  color: #6aacda;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 3px 3px 3px;
+}
+
+.shirt-cost::before {
+  content: '$';
+}
+/* End Shirt Info /*
+/* End Single Shirt Container */
+/* End Main Shirts Container */
